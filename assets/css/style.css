@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-align: none !important;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.bg-shadow {
+    background: #FFF;
+    box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.08);
+}
+
+.nft {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.feed {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.wallet {
+    color: #666666;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bg-box {
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    background: #FFF;
+}
+
+.jhone {
+    color: #666666;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn-post {
+    color: #1A9FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    background: none;
+}
+
+.btn-post:hover {
+    color: blue;
+}
+
+.bg-border {
+    border-radius: 25.5px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    background: #FFF;
+}
+
+.btn-follow {
+    color: #1A9FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    background: none;
+}
+
+.btn-follow:hover {
+    color: blue;
+}
+
+.jhone-2 {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.suggestion {
+    color: #666666;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form {
+    color: #666666;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.copyright {
+    color: #666666;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bg-box-2 {
+    width: 889px;
+    height: 476px;
+    flex-shrink: 0;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #FAFAFA;
+}
+
+.curser {
+    cursor: pointer;
+}
+
+.line {
+    display: flex;
+    width: 80%;
+    background-color: black;
+    height: 5px;
+    margin: 5px 0px;
+    z-index: 3;
+}
+
+.line-1 {
+    display: flex;
+    width: 40%;
+    background-color: black;
+    margin: 5px 0px;
+    margin-left: 15px;
+    height: 5px;
+    float: left;
+    z-index: 3;
+
+}
+
+.line-2 {
+    display: flex;
+    width: 40%;
+    background-color: black;
+    margin: 5px 0px;
+    margin-right: 15px;
+    height: 5px;
+}
+
+.search {
+    border-radius: 25.5px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    background: #FFF;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 8px 24px;
+}
+
+
+.toggler {
+    width: 40px;
+    height: 23px;
+    border-radius: 42px;
+    background-color: #f0f0f0;
+    border: 1px solid #c0c0c0;
+    /* position: relative; */
+    display: flex;
+}
+
+.toggler .butn {
+    height: 22px;
+    width: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    /* display: flex; */
+    transition: all 20ms linear;
+    /* position: absolute; */
+    top: 0;
+}
+
+#toggle:checked~label.toggler {
+    justify-content: end;
+}
+
+#toggle:checked~label.toggler.butn {
+    transform: translate(2px 2px);
+}
+
+@media(max-width:992px) {
+    label[for="iconbox"] {
+        width: 40px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        top: 0;
+        left: 0;
+        position: relative;
+        z-index: 2;
+    }
+
+}
+
+label[for="iconbox"]>span {
+    width: 100%;
+    margin: auto;
+}
+
+.menulist {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: -100%;
+    transition: all 400ms linear;
+    background-color: #FFF;
+    flex-direction: column;
+
+}
+
+input:checked~ul.menulist {
+    left: 0;
+}
+
+@media(min-width:320px) and (max-width:992px) {
+    .button-liked {
+        color: #FFF;
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border-radius: 25.5px;
+        background: #000;
+        padding: 5px 12px;
+        border: none;
+    }
+
+    .button-liked:hover {
+        background-color: #666666;
+
+    }
+
+    .buttton-recived {
+        color: rgba(0, 0, 0, 0.60);
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border-radius: 25.5px;
+        background: rgba(0, 0, 0, 0.10);
+        border: none;
+        padding: 5px 12px;
+    }
+
+    .buttton-recived:hover {
+        background-color: gray;
+        color: white;
+    }
+
+    .bg-card {
+        border: 1px solid rgba(0, 0, 0, 0.20);
+        background: white;
+        width: 119px;
+        height: 129px;
+        flex-shrink: 0;
+        text-align: center;
+
+
+    }
+
+    .jhone-3 {
+        color: #000;
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .btn-follow-1 {
+        color: #1A9FFF;
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border: none;
+        background: none;
+    }
+
+    .btn-follow-1:hover {
+        color: blue;
+    }
+
+    .search-svg {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        color: #000;
+    }
+}
+
+@media(min-width:320px) and (max-width:435px) {
+
+    .search-svg {
+        padding-left: 10px;
+    }
+
+    .nft {
+        font-size: 16px;
+    }
+
+    .w-m-30 {
+        width: 30%;
+    }
+
+    .w-m-25 {
+        width: 25%;
+    }
+}
+
+@media(max-width:768px) {
+    .w-m-100 {
+        width: 100%;
+    }
+}
